@@ -1,0 +1,4 @@
+SELECT *
+FROM Orders
+INNER JOIN Customers
+WHERE  Orders.CustomerID = Customers.CustomerID AND Orders.OrderAmount >= 10000 AND Customers.Country ='mexico'
